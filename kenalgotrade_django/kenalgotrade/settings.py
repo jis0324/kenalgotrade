@@ -25,7 +25,10 @@ SECRET_KEY = '#xu$lbm2jk06b)pcaz%*@h(-*hhtwhwk-&%)n@h2@r=+#-3%ii'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.0.50"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "192.168.0.50"
+]
 
 
 # Application definition
@@ -128,5 +131,5 @@ STATICFILES_DIRS = [
 ]
 
 APPEND_SLASH=True
-LOGOUT_REDIRECT_URL = ''
-LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/index'

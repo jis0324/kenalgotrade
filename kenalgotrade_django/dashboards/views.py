@@ -6,4 +6,4 @@ def home(request):
 
 @login_required
 def index(request):
-  return HttpResponse("Loged In!")
+  return HttpResponse("""Loged In!\t<a href="/logout" class="logo-link">LogOut</a>""")
